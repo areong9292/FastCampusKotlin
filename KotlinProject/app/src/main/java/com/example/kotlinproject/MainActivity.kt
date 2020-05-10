@@ -2,6 +2,7 @@ package com.example.kotlinproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.kotlinproject.Step1.AnyTest
 import com.example.kotlinproject.Step1.FirstTest
 import com.example.kotlinproject.Step1.NumberTest
 import com.example.kotlinproject.Step1.StringTest
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         doTest(FirstTest(::writeln));
         doTest(NumberTest(::writeln));
         doTest(StringTest(::writeln));
+        doTest(AnyTest(::writeln));
     }
 
     private fun doTest(o : TestClass) {
