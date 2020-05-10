@@ -26,6 +26,9 @@ class FirstTest (p : (Any)->Unit) : TestClass(p) {
         // 이거 오류남 - val은 첫 할당 후 값 바꿀 수 없다
         // text = 34566
 
+        // hiMessage가 밖에 있지만 컴파일 과정에서
+        // FirstTest.kt 파일이 FirstTestKt.Class로 변환되며
+        // 아래 hiMessage가 전역 변수 처럼 작동하게 된다
         println(hiMessage)
     }
 
