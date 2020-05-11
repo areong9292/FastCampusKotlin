@@ -2,10 +2,7 @@ package com.example.kotlinproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.kotlinproject.Step1.AnyTest
-import com.example.kotlinproject.Step1.FirstTest
-import com.example.kotlinproject.Step1.NumberTest
-import com.example.kotlinproject.Step1.StringTest
+import com.example.kotlinproject.Step1.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,10 +14,11 @@ class MainActivity : AppCompatActivity() {
         // 우리가 만든 예제들을 이곳에서 실행시킨다.
         // ::메소드 명 - 메소드의 주소를 가져와라
         // 아래의 뜻은 FirstTest에서의 println(기존 콘솔창 출력 메소드)는 writeln로 대체한다
-        doTest(FirstTest(::writeln));
-        doTest(NumberTest(::writeln));
-        doTest(StringTest(::writeln));
-        doTest(AnyTest(::writeln));
+        //doTest(FirstTest(::writeln));
+        //doTest(NumberTest(::writeln));
+        //doTest(StringTest(::writeln));
+        //doTest(AnyTest(::writeln));
+        doTest(FunctionTest(::writeln));
     }
 
     private fun doTest(o : TestClass) {
