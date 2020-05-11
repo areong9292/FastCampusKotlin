@@ -26,7 +26,7 @@ class FunctionTest (p : (Any)->Unit) : TestClass(p) {
     fun ThreeMul (n : Int) = Three() * n
     
     // String을 입력으로 받고 리턴은 널을 허용하는 Any다
-    fun funByReturn(s : String): Any? {
+    fun funByReturn(s : String): Any {
         return s
     }
 
@@ -54,5 +54,5 @@ class FunctionTest (p : (Any)->Unit) : TestClass(p) {
 
     // 입력을 String으로 받고 결과가 Any?
     // :: - 함수 주소 값(함수의 포인터)을 넘긴다
-    val funcVarType : (String) -> Any? = ::funByReturn
+    val funcVarType : (String) -> Any = ::funByReturn
 }
