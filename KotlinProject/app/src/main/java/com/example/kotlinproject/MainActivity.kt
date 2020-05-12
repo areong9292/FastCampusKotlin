@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
         //doTest(NumberTest(::writeln));
         //doTest(StringTest(::writeln));
         //doTest(AnyTest(::writeln));
-        doTest(FunctionTest(::writeln));
+        //doTest(FunctionTest(::writeln));
+        doTest(ConditionTest(::writeln));
     }
 
     private fun doTest(o : TestClass) {
