@@ -14,12 +14,13 @@ class MainActivity : AppCompatActivity() {
         // 우리가 만든 예제들을 이곳에서 실행시킨다.
         // ::메소드 명 - 메소드의 주소를 가져와라
         // 아래의 뜻은 FirstTest에서의 println(기존 콘솔창 출력 메소드)는 writeln로 대체한다
-        //doTest(FirstTest(::writeln));
-        //doTest(NumberTest(::writeln));
-        //doTest(StringTest(::writeln));
-        //doTest(AnyTest(::writeln));
-        //doTest(FunctionTest(::writeln));
-        doTest(ConditionTest(::writeln));
+        //doTest(FirstTest(::writeln))
+        //doTest(NumberTest(::writeln))
+        //doTest(StringTest(::writeln))
+        //doTest(AnyTest(::writeln))
+        //doTest(FunctionTest(::writeln))
+        //doTest(ConditionTest(::writeln))
+        doTest(LabelTest(::writeln))
     }
 
     private fun doTest(o : TestClass) {
