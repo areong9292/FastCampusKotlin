@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         //doTest(FunctionTest(::writeln))
         //doTest(ConditionTest(::writeln))
         //doTest(LabelTest(::writeln))
-        doTest(CollectionTest(::writeln))
+        //doTest(CollectionTest(::writeln))
+        doTest(ExceptionTest(::writeln))
     }
 
     private fun doTest(o : TestClass) {
