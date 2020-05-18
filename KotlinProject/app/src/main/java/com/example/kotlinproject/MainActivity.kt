@@ -2,7 +2,7 @@ package com.example.kotlinproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.kotlinproject.Step1.*
+import com.example.kotlinproject.Step2.ClassTest
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         //doTest(ConditionTest(::writeln))
         //doTest(LabelTest(::writeln))
         //doTest(CollectionTest(::writeln))
-        doTest(ExceptionTest(::writeln))
+        //doTest(ExceptionTest(::writeln))
+        doTest(ClassTest(::writeln))
     }
 
     private fun doTest(o : TestClass) {
