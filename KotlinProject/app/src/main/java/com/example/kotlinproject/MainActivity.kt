@@ -2,6 +2,7 @@ package com.example.kotlinproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.kotlinproject.Step1.PolymorphTest
 import com.example.kotlinproject.Step2.ClassTest
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -23,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         //doTest(LabelTest(::writeln))
         //doTest(CollectionTest(::writeln))
         //doTest(ExceptionTest(::writeln))
-        doTest(ClassTest(::writeln))
+        //doTest(ClassTest(::writeln))
+        doTest(PolymorphTest(::writeln))
     }
 
     private fun doTest(o : TestClass) {
