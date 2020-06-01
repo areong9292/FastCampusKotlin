@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kotlinproject.Step1.PolymorphTest
 import com.example.kotlinproject.Step2.ClassTest
+import com.example.kotlinproject.Step2.DataClassTest
 import com.example.kotlinproject.Step2.iasTest
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -27,7 +28,8 @@ class MainActivity : AppCompatActivity() {
         //doTest(ExceptionTest(::writeln))
         //doTest(ClassTest(::writeln))
         //doTest(PolymorphTest(::writeln))
-        doTest(iasTest(::writeln))
+        //doTest(iasTest(::writeln))
+        doTest(DataClassTest(::writeln))
     }
 
     private fun doTest(o : TestClass) {
